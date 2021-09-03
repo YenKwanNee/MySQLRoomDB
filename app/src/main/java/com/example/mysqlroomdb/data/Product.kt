@@ -10,11 +10,11 @@ import androidx.room.PrimaryKey
 data class Product(
 
     @PrimaryKey (autoGenerate = true)
-    var id:Int,
+    var id:Int = 0,
 
     @ColumnInfo
-    var name:String,
+    var name:String = "",
 
     @ColumnInfo
-    var price:Double
+    var price:Double = 0.0
  )
